@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> body { margin: 0; } </style>
+
+    <script src="//unpkg.com/3d-force-graph"></script>
+    <!--<script src="../../dist/3d-force-graph.js"></script>-->
+    <script src="//unpkg.com/three"></script>
+    <script src="//unpkg.com/three-spritetext"></script>
+</head>
+<body>
+    <div id="3d-graph"></div>
+
+    <script>
+        const gData = {
+            nodes: [
+                    {
+                        "name": "Fatty acid",
+                        "group": "compound",
+                        "id": "10"
+                    },
+                    {
+                        "name": "Fatty acid",
+                        "group": "compound",
+                        "id": "16"
+                    },
+                    {
+                        "name": "Long-chain acyl-CoA",
+                        "group": "compound",
+                        "id": "41"
+                    },
+                    {
+                        "name": "Diacylglycerol",
+                        "group": "compound",
+                        "id": "42"
+                    },
+                    {
+                        "name": "PRKCA",
+                        "group": "gene",
+                        "id": "44"
+                    },
+                    {
+                        "name": "CD36",
+                        "group": "gene",
+                        "id": "49"
+                    },
+                    {
+                        "name": "N-Acylsphingosine",
+                        "group": "compound",
+                        "id": "62"
+                    },
+                    {
+                        "name": "PTPA",
+                        "group": "gene",
+                        "id": "65"
+                    },
+                                        {
+                        "name": "PRKCB",
+                        "group": "gene",
+                        "id": "91"
+                    },
+                    {
+                        "name": "D-Glucose",
+                        "group": "compound",
+                        "id": "281"
+                    },
+                    {
+                        "name": "D-Glucose",
+                        "group": "compound",
+                        "id": "282"
+                    },
+                    {
+                        "name": "UDP-N-acetyl-alpha-D-glucosamine",
+                        "group": "compound",
+                        "id": "283"
+                    },
+                    {
+                        "name": "D-Glucose 6-phosphate",
+                        "group": "compound",
+                        "id": "284"
+                    },
+                    {
+                        "name": "D-Fructose 6-phosphate",
+                        "group": "compound",
+                        "id": "287"
+                    },
+                    {
+                        "name": "GFPT1",
+                        "group": "gene",
+                        "id": "289"
+                    },
+                    {
+                        "name": "D-Glucosamine 6-phosphate",
+                        "group": "compound",
+                        "id": "290"
+                    },
+                    {
+                        "name": "alpha-D-Glucosamine 1-phosphate",
+                        "group": "compound",
+                        "id": "292"
+                    },                    
+                    {
+                        "name": "AGT",
+                        "group": "gene",
+                        "id": "413"
+                    },
+                    {
+                        "name": "PPARA",
+                        "group": "gene",
+                        "id": "429"
+                    },
+                    {
+                        "name": "Calcium cation",
+                        "group": "compound",
+                        "id": "432"
+                    },
+                    {
+                        "name": "Hydrogen peroxide",
+                        "group": "compound",
+                        "id": "434"
+                    },
+                    {
+                        "name": "PPIF",
+                        "group": "gene",
+                        "id": "435"
+                    },
+                    {
+                        "name": "CYBB",
+                        "group": "gene",
+                        "id": "436"
+                    },
+                    {
+                        "name": "CYBA",
+                        "group": "gene",
+                        "id": "437"
+                    },
+                    {
+                        "name": "NCF1",
+                        "group": "gene",
+                        "id": "438"
+                    },
+                    {
+                        "name": "NCF2",
+                        "group": "gene",
+                        "id": "439"
+                    },
+                    {
+                        "name": "RAC1",
+                        "group": "gene",
+                        "id": "440"
+                    },
+                    {
+                        "name": "NCF4",
+                        "group": "gene",
+                        "id": "441"
+                    },
+                    {
+                        "name": "SLC2A1",
+                        "group": "gene",
+                        "id": "443"
+                    },
+                    {
+                        "name": "NDUFC2-KCTD14...",
+                        "group": "gene",
+                        "id": "445"
+                    },
+                    {
+                        "name": "SDHA",
+                        "group": "gene",
+                        "id": "446"
+                    },
+                    {
+                        "name": "UQCR11",
+                        "group": "gene",
+                        "id": "447"
+                    },
+                    {
+                        "name": "ATP5PD",
+                        "group": "gene",
+                        "id": "448"
+                    },
+                    {
+                        "name": "COX6B2",
+                        "group": "gene",
+                        "id": "449"
+                    },
+                    {
+                        "name": "ATP",
+                        "group": "compound",
+                        "id": "451"
+                    },
+                    {
+                        "name": "Pyruvate",
+                        "group": "compound",
+                        "id": "453"
+                    },
+                    {
+                        "name": "Hydrogen peroxide",
+                        "group": "compound",
+                        "id": "461"
+                    },
+                    {
+                        "name": "CPT1B",
+                        "group": "gene",
+                        "id": "465"
+                    },
+                    {
+                        "name": "CD36",
+                        "group": "gene",
+                        "id": "466"
+                    },
+                    {
+                        "name": "PDK2",
+                        "group": "gene",
+                        "id": "467"
+                    },
+                    {
+                        "name": "RYR2",
+                        "group": "gene",
+                        "id": "470"
+                    },
+                    {
+                        "name": "ATP2A1",
+                        "group": "gene",
+                        "id": "471"
+                    },
+                    {
+                        "name": "AGER",
+                        "group": "gene",
+                        "id": "473"
+                    },
+                    {
+                        "name": "TGFB1",
+                        "group": "gene",
+                        "id": "474"
+                    },
+                    {
+                        "name": "[Protein]-N(epsilon)-(carboxymethyl)lysine",
+                        "group": "compound",
+                        "id": "475"
+                    },
+                    {
+                        "name": "MAPK14",
+                        "group": "gene",
+                        "id": "479"
+                    },
+                    {
+                        "name": "MAPK8",
+                        "group": "gene",
+                        "id": "480"
+                    },
+                    {
+                        "name": "NFKB1",
+                        "group": "gene",
+                        "id": "481"
+                    },
+                    {
+                        "name": "MTOR",
+                        "group": "gene",
+                        "id": "486"
+                    },
+                    {
+                        "name": "INSR",
+                        "group": "gene",
+                        "id": "487"
+                    },
+                    {
+                        "name": "GSK3B",
+                        "group": "gene",
+                        "id": "491"
+                    },
+                    {
+                        "name": "TBC1D4",
+                        "group": "gene",
+                        "id": "495"
+                    },
+                    {
+                        "name": "INS",
+                        "group": "gene",
+                        "id": "496"
+                    },
+                    {
+                        "name": "Starch",
+                        "group": "compound",
+                        "id": "497"
+                    },
+                    {
+                        "name": "GYS1",
+                        "group": "gene",
+                        "id": "498"
+                    },
+                    {
+                        "name": "D-Glucose",
+                        "group": "compound",
+                        "id": "501"
+                    },
+                    {
+                        "name": "D-Glucose",
+                        "group": "compound",
+                        "id": "502"
+                    },
+                    {
+                        "name": "IRS1",
+                        "group": "gene",
+                        "id": "507"
+                    },
+                    {
+                        "name": "Phosphatidylinositol-3,4,5-trisphosphate",
+                        "group": "compound",
+                        "id": "509"
+                    },
+                    {
+                        "name": "PIK3CA",
+                        "group": "gene",
+                        "id": "510"
+                    },
+                    {
+                        "name": "AKT3",
+                        "group": "gene",
+                        "id": "511"
+                    },
+                    {
+                        "name": "PTEN",
+                        "group": "gene",
+                        "id": "512"
+                    },
+                    {
+                        "name": "SLC2A4",
+                        "group": "gene",
+                        "id": "515"
+                    },
+                    {
+                        "name": "REN",
+                        "group": "gene",
+                        "id": "521"
+                    },
+                    {
+                        "name": "CMA1",
+                        "group": "gene",
+                        "id": "522"
+                    },
+                    {
+                        "name": "SP1",
+                        "group": "gene",
+                        "id": "524"
+                    },
+                    {
+                        "name": "AGTR1",
+                        "group": "gene",
+                        "id": "527"
+                    },
+                    {
+                        "name": "CAMK2A",
+                        "group": "gene",
+                        "id": "532"
+                    },
+                    {
+                        "name": "TNNI3",
+                        "group": "gene",
+                        "id": "533"
+                    },
+                    {
+                        "name": "COL1A1",
+                        "group": "gene",
+                        "id": "541"
+                    },
+                    {
+                        "name": "MMP2",
+                        "group": "gene",
+                        "id": "542"
+                    },
+                    {
+                        "name": "PDHA1",
+                        "group": "gene",
+                        "id": "543"
+                    },
+                    {
+                        "name": "Acetyl-CoA",
+                        "group": "compound",
+                        "id": "544"
+                    },
+                    {
+                        "name": "PDK2",
+                        "group": "gene",
+                        "id": "545"
+                    },
+                    {
+                        "name": "Calcium cation",
+                        "group": "compound",
+                        "id": "552"
+                    },
+                    {
+                        "name": "Hydrogen peroxide",
+                        "group": "compound",
+                        "id": "554"
+                    },
+                    {
+                        "name": "MPC2",
+                        "group": "gene",
+                        "id": "558"
+                    },
+                    {
+                        "name": "Pyruvate",
+                        "group": "compound",
+                        "id": "559"
+                    },
+                    {
+                        "name": "Angiotensin II",
+                        "group": "compound",
+                        "id": "561"
+                    },
+                    {
+                        "name": "Calcium cation",
+                        "group": "compound",
+                        "id": "568"
+                    },
+                    {
+                        "name": "L-Carnitine",
+                        "group": "compound",
+                        "id": "571"
+                    },
+                    {
+                        "name": "CPT1B",
+                        "group": "gene",
+                        "id": "83"
+                    },
+                    {
+                        "name": "AGT",
+                        "group": "gene",
+                        "id": "588"
+                    },
+                    {
+                        "name": "REN",
+                        "group": "gene",
+                        "id": "589"
+                    },
+                    {
+                        "name": "Angiotensin I",
+                        "group": "compound",
+                        "id": "590"
+                    },
+                    {
+                        "name": "Angiotensin II",
+                        "group": "compound",
+                        "id": "591"
+                    },
+                    {
+                        "name": "CMA1",
+                        "group": "gene",
+                        "id": "593"
+                    },
+                    {
+                        "name": "Angiotensin II",
+                        "group": "compound",
+                        "id": "599"
+                    },
+                    {
+                        "name": "AGTR1",
+                        "group": "gene",
+                        "id": "600"
+                    },
+                    {
+                        "name": "TGFB1",
+                        "group": "gene",
+                        "id": "603"
+                    },
+                    {
+                        "name": "COL1A1",
+                        "group": "gene",
+                        "id": "604"
+                    },
+                    {
+                        "name": "MMP2",
+                        "group": "gene",
+                        "id": "605"
+                    },
+                    {
+                        "name": "TGFB1",
+                        "group": "gene",
+                        "id": "607"
+                    },
+                    {
+                        "name": "TGFBR1",
+                        "group": "gene",
+                        "id": "608"
+                    },
+                    {
+                        "name": "SMAD2",
+                        "group": "gene",
+                        "id": "611"
+                    },
+                    {
+                        "name": "REN",
+                        "group": "gene",
+                        "id": "618"
+                    },
+                    {
+                        "name": "PLCB1",
+                        "group": "gene",
+                        "id": "619"
+                    },
+                    {
+                        "name": "PRKCB",
+                        "group": "gene",
+                        "id": "620"
+                    },
+                    {
+                        "name": "Angiotensin I",
+                        "group": "compound",
+                        "id": "622"
+                    },
+                    {
+                        "name": "ACE",
+                        "group": "gene",
+                        "id": "623"
+                    },
+                    {
+                        "name": "AGT",
+                        "group": "gene",
+                        "id": "625"
+                    },
+                    {
+                        "name": "REN",
+                        "group": "gene",
+                        "id": "626"
+                    },
+                    {
+                        "name": "Angiotensin II",
+                        "group": "compound",
+                        "id": "627"
+                    },
+                    {
+                        "name": "Angiotensin I",
+                        "group": "compound",
+                        "id": "629"
+                    },
+                    {
+                        "name": "ACE",
+                        "group": "gene",
+                        "id": "631"
+                    },
+                    {
+                        "name": "AGT",
+                        "group": "gene",
+                        "id": "632"
+                    },
+                    {
+                        "name": "Diacylglycerol",
+                        "group": "compound",
+                        "id": "634"
+                    },
+                    {
+                        "name": "D-Glucose",
+                        "group": "compound",
+                        "id": "638"
+                    },
+                    {
+                        "name": "D-Glucose",
+                        "group": "compound",
+                        "id": "639"
+                    },
+                    {
+                        "name": "SLC2A1",
+                        "group": "gene",
+                        "id": "640"
+                    },
+                    {
+                        "name": "Nitric oxide",
+                        "group": "compound",
+                        "id": "646"
+                    },
+                    {
+                        "name": "NOS3",
+                        "group": "gene",
+                        "id": "647"
+                    },
+                    {
+                        "name": "PRKCA",
+                        "group": "gene",
+                        "id": "648"
+                    },
+                    {
+                        "name": "D-Glucose",
+                        "group": "compound",
+                        "id": "651"
+                    },
+                    {
+                        "name": "D-Glucose",
+                        "group": "compound",
+                        "id": "652"
+                    },
+                    {
+                        "name": "SLC2A1",
+                        "group": "gene",
+                        "id": "653"
+                    },
+                    {
+                        "name": "Hydrogen peroxide",
+                        "group": "compound",
+                        "id": "659"
+                    },
+                    {
+                        "name": "D-Glucose 6-phosphate",
+                        "group": "compound",
+                        "id": "664"
+                    },
+                    {
+                        "name": "D-Fructose 6-phosphate",
+                        "group": "compound",
+                        "id": "665"
+                    },
+                    {
+                        "name": "Pyruvate",
+                        "group": "compound",
+                        "id": "667"
+                    },
+                    {
+                        "name": "[Protein]-N(epsilon)-(carboxymethyl)lysine",
+                        "group": "compound",
+                        "id": "668"
+                    },
+                    {
+                        "name": "D-Glyceraldehyde 3-phosphate",
+                        "group": "compound",
+                        "id": "670"
+                    },
+                    {
+                        "name": "3-Phospho-D-glyceroyl phosphate",
+                        "group": "compound",
+                        "id": "674"
+                    },
+                    {
+                        "name": "GAPDH",
+                        "group": "gene",
+                        "id": "675"
+                    },
+                    {
+                        "name": "Methylglyoxal",
+                        "group": "compound",
+                        "id": "676"
+                    },
+                    {
+                        "name": "D-Fructose",
+                        "group": "compound",
+                        "id": "680"
+                    },
+                    {
+                        "name": "UDP-N-acetyl-alpha-D-glucosamine",
+                        "group": "compound",
+                        "id": "684"
+                    },
+                    {
+                        "name": "Fructose 3-phosphate",
+                        "group": "compound",
+                        "id": "687"
+                    },
+                    {
+                        "name": "3-Deoxyglucosone",
+                        "group": "compound",
+                        "id": "688"
+                    },
+                    {
+                        "name": "Hydroxyl radical",
+                        "group": "compound",
+                        "id": "692"
+                    },
+                    {
+                        "name": "PARP1",
+                        "group": "gene",
+                        "id": "693"
+                    },
+                    {
+                        "name": "G6PD",
+                        "group": "gene",
+                        "id": "700"
+                    },
+                    {
+                        "name": "Glutathione",
+                        "group": "compound",
+                        "id": "701"
+                    },
+                    {
+                        "name": "NADP+",
+                        "group": "compound",
+                        "id": "702"
+                    },
+                    {
+                        "name": "Glutathione disulfide",
+                        "group": "compound",
+                        "id": "703"
+                    },
+                    {
+                        "name": "NADPH",
+                        "group": "compound",
+                        "id": "704"
+                    },
+                    {
+                        "name": "Hydrogen peroxide",
+                        "group": "compound",
+                        "id": "705"
+                    },
+                    {
+                        "name": "H2O",
+                        "group": "compound",
+                        "id": "706"
+                    },
+                    {
+                        "name": "GSR",
+                        "group": "gene",
+                        "id": "708"
+                    },
+                    {
+                        "name": "ATP2A1",
+                        "group": "gene",
+                        "id": "720"
+                    },
+                    {
+                        "name": "PLN",
+                        "group": "gene",
+                        "id": "724"
+                    },
+                    {
+                        "name": "D-Sorbitol",
+                        "group": "compound",
+                        "id": "731"
+                    },
+                    {
+                        "name": "PPP1CA",
+                        "group": "gene",
+                        "id": "737"
+                    },
+                    {
+                        "name": "CTSD",
+                        "group": "gene",
+                        "id": "738"
+                    },
+                    {
+                        "name": "PRKCZ",
+                        "group": "gene",
+                        "id": "739"
+                    },
+                    {
+                        "name": "GP91, p47phox, p22phox, p67phox, p40phox, Rac",
+                        "group": "group",
+                        "id": "740"
+                    }
+                ],
+            links: [
+                    {
+                        "source": "283",
+                        "target": "532",
+                        "value": 10
+                    },
+                    {
+                        "source": "532",
+                        "target": "470",
+                        "value": 5
+                    },
+                    {
+                        "source": "283",
+                        "target": "533",
+                        "value": 1
+                    },
+                    {
+                        "source": "283",
+                        "target": "724",
+                        "value": 1
+                    },
+                    {
+                        "source": "62",
+                        "target": "44",
+                        "value": 1
+                    },
+                    {
+                        "source": "62",
+                        "target": "65",
+                        "value": 1
+                    },
+                    {
+                        "source": "62",
+                        "target": "737",
+                        "value": 1
+                    },
+                    {
+                        "source": "62",
+                        "target": "738",
+                        "value": 1
+                    },
+                    {
+                        "source": "62",
+                        "target": "739",
+                        "value": 1
+                    },
+                    {
+                        "source": "496",
+                        "target": "487",
+                        "value": 1
+                    },
+                    {
+                        "source": "498",
+                        "target": "497",
+                        "value": 1
+                    },
+                    {
+                        "source": "607",
+                        "target": "608",
+                        "value": 1
+                    },
+                    {
+                        "source": "608",
+                        "target": "611",
+                        "value": 1
+                    },
+                    {
+                        "source": "599",
+                        "target": "600",
+                        "value": 1
+                    },
+                    {
+                        "source": "475",
+                        "target": "481",
+                        "value": 1
+                    },
+                    {
+                        "source": "473",
+                        "target": "479",
+                        "value": 1
+                    },
+                    {
+                        "source": "473",
+                        "target": "740",
+                        "value": 1
+                    },
+                    {
+                        "source": "527",
+                        "target": "740",
+                        "value": 1
+                    },
+                    {
+                        "source": "434",
+                        "target": "481",
+                        "value": 1
+                    },
+                    {
+                        "source": "473",
+                        "target": "481",
+                        "value": 1
+                    },
+                    {
+                        "source": "473",
+                        "target": "480",
+                        "value": 1
+                    },
+                    {
+                        "source": "91",
+                        "target": "481",
+                        "value": 1
+                    },
+                    {
+                        "source": "511",
+                        "target": "486",
+                        "value": 1
+                    },
+                    {
+                        "source": "639",
+                        "target": "620",
+                        "value": 1
+                    },
+                    {
+                        "source": "600",
+                        "target": "619",
+                        "value": 1
+                    },
+                    {
+                        "source": "634",
+                        "target": "619",
+                        "value": 1
+                    },
+                    {
+                        "source": "634",
+                        "target": "620",
+                        "value": 1
+                    },
+                    {
+                        "source": "481",
+                        "target": "542",
+                        "value": 1
+                    },
+                    {
+                        "source": "481",
+                        "target": "541",
+                        "value": 1
+                    },
+                    {
+                        "source": "481",
+                        "target": "474",
+                        "value": 1
+                    },
+                    {
+                        "source": "429",
+                        "target": "465",
+                        "value": 1
+                    },
+                    {
+                        "source": "429",
+                        "target": "467",
+                        "value": 1
+                    },
+                    {
+                        "source": "429",
+                        "target": "466",
+                        "value": 1
+                    },
+                    {
+                        "source": "620",
+                        "target": "603",
+                        "value": 1
+                    },
+                    {
+                        "source": "620",
+                        "target": "604",
+                        "value": 1
+                    },
+                    {
+                        "source": "620",
+                        "target": "605",
+                        "value": 1
+                    },
+                    {
+                        "source": "481",
+                        "target": "413",
+                        "value": 1
+                    },
+                    {
+                        "source": "481",
+                        "target": "521",
+                        "value": 1
+                    },
+                    {
+                        "source": "481",
+                        "target": "522",
+                        "value": 1
+                    },
+                    {
+                        "source": "524",
+                        "target": "720",
+                        "value": 1
+                    },
+                    {
+                        "source": "283",
+                        "target": "524",
+                        "value": 1
+                    },
+                    {
+                        "source": "545",
+                        "target": "543",
+                        "value": 1
+                    },
+                    {
+                        "source": "631",
+                        "target": "627",
+                        "value": 1
+                    },
+                    {
+                        "source": "618",
+                        "target": "629",
+                        "value": 1
+                    },
+                    {
+                        "source": "626",
+                        "target": "622",
+                        "value": 1
+                    },
+                    {
+                        "source": "623",
+                        "target": "599",
+                        "value": 1
+                    },
+                    {
+                        "source": "700",
+                        "target": "704",
+                        "value": 1
+                    },
+                    {
+                        "source": "708",
+                        "target": "701",
+                        "value": 1
+                    },
+                    {
+                        "source": "693",
+                        "target": "675",
+                        "value": 1
+                    },
+                    {
+                        "source": "648",
+                        "target": "647",
+                        "value": 1
+                    },
+                    {
+                        "source": "659",
+                        "target": "648",
+                        "value": 1
+                    },
+                    {
+                        "source": "475",
+                        "target": "473",
+                        "value": 1
+                    },
+                    {
+                        "source": "487",
+                        "target": "507",
+                        "value": 1
+                    },
+                    {
+                        "source": "511",
+                        "target": "495",
+                        "value": 1
+                    },
+                    {
+                        "source": "491",
+                        "target": "498",
+                        "value": 1
+                    },
+                    {
+                        "source": "507",
+                        "target": "510",
+                        "value": 1
+                    },
+                    {
+                        "source": "511",
+                        "target": "491",
+                        "value": 1
+                    },
+                    {
+                        "source": "554",
+                        "target": "435",
+                        "value": 1
+                    },
+                    {
+                        "source": "16",
+                        "target": "429",
+                        "value": 1
+                    },
+                    {
+                        "source": "589",
+                        "target": "590",
+                        "value": 1
+                    },
+                    {
+                        "source": "593",
+                        "target": "591",
+                        "value": 1
+                    },
+                    {
+                        "source": "512",
+                        "target": "509",
+                        "value": 1
+                    },
+                    {
+                        "source": "509",
+                        "target": "511",
+                        "value": 1
+                    },
+                    {
+                        "source": "647",
+                        "target": "646",
+                        "value": 1
+                    },
+                    {
+                        "source": "652",
+                        "target": "700",
+                        "value": 1
+                    },
+                    {
+                        "source": "684",
+                        "target": "647",
+                        "value": 1
+                    },
+                    {
+                        "source": "611",
+                        "target": "603",
+                        "value": 1
+                    },
+                    {
+                        "source": "611",
+                        "target": "604",
+                        "value": 1
+                    },
+                    {
+                        "source": "611",
+                        "target": "605",
+                        "value": 1
+                    },
+                    {
+                        "source": "44",
+                        "target": "507",
+                        "value": 1
+                    },
+                    {
+                        "source": "510",
+                        "target": "509",
+                        "value": 1
+                    }
+                ]
+            
+        };
+
+        const Graph = ForceGraph3D()
+        (document.getElementById('3d-graph'))
+            .graphData(gData)
+            .nodeAutoColorBy("group")
+            .nodeThreeObject(nodes => {
+                const sprite = new SpriteText(nodes.name);
+                sprite.material.depthWrite = false;
+                sprite.color = nodes.color;
+                sprite.textHeight = 8;
+                return sprite
+            })
+            .linkDirectionalArrowLength(10)
+            .linkDirectionalArrowRelPos(1)
+            .linkWidth(1);
+    </script>
+</body>
+</html>
