@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <title>KEGG pathway</title>
+    <style type="text/css">
+        canvas {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+        body {
+            display: flex;
+        
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.5.0/d3.js">
+       
+    </script>
+
+</head>
+<body>
+    <canvas></canvas>
+    <script type = "module" src="canvas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-dispatch@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-quadtree@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-timer@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-force@3"></script>
+    <script type = "module">
+        import {forceGraph} from "https://cdn.skypack.dev/d3-force@3";
+
+        const chart = ForceGraph(d3_data, {
+            nodeId: d3_data.id,
+            nodeGroup: d3_data.group,
+            nodeTitle: `${d3_data.name}\n${d3_data.group}`,
+            linkStrokeWidth: l => Math.sqrt(l.value),
+            width,
+            height: 700,
+            invalidation // a promise to stop the simulation when the cell is re-run
+    })
+    </script>
+</body>    
+</html>
