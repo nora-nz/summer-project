@@ -2,7 +2,7 @@ New folder to break info down to weeks but keep them easily downloadable
 Files can be found in separate folders with descriptions too
 
 - 3d force graph image.JPG - assets/week 3
-- 3d force graph.html - scripts/week 3
+- 3d map.html - scripts/week 3
 - canvas.js - scripts/week 3
 - d3_data.json - data/cleaned/week 3
 - export_hsa05415.json - data/cleaned/week 3
