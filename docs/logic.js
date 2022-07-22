@@ -8,7 +8,7 @@ const Graph = ForceGraph3D()(elem)
     .linkDirectionalParticles(1)
     .linkDirectionalParticleSpeed(0.02)
     .linkDirectionalParticleWidth(2)
-    .warmupTicks(20)
+    .warmupTicks(50)
     .cooldownTicks(0)
     .linkColor("colour")
     .linkDirectionalParticleColor("colour");
