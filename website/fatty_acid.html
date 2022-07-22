@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style> body { margin: 0; } </style>
+      
+        <script src="https://unpkg.com/3d-force-graph"></script>
+        <script src="https://unpkg.com/d3-force-cluster-3d"></script>
+        <script src="https://unpkg.com/d3-force-3d"></script>
+        <script src="https://unpkg.com/three"></script>
+        <script src="https://unpkg.com/three-spritetext"></script>
+      <!--  <script src="../../dist/3d-force-graph.js"></script>-->
+        <script src="fatty_acid.js"></script>
+        <style>
+            body, html {
+                height: 100%;
+                margin: 0;
+                font: 400 15px/1.8 "Lato", sans-serif;
+                background-color: rgb(1, 0, 18);
+            }
+            .btn {
+                border: none;
+                background-color: #111;
+                padding: 14px 28px;
+                font-size: 12px;
+                cursor: pointer;
+                display: inline-block;
+                opacity: 0.8;
+                position: center;
+                text-align: center;
+                margin-top: 1rem;
+                margin: 1rem;
+                border-radius: 5px;
+                text-decoration: none;
+                font: 12px "Lato", sans-serif;
+            }
+
+                /* On mouse-over */
+            .btn:hover {background: rgb(89,203,232);}
+
+            .btn {color: #fff;}
+        </style>
+      </head>
+      <body>
+        <div class="button">
+            <span>
+                <a class="btn" href="./fatty_acid_c.html">Cytoplasm</a>
+                <a class="btn" href="./fatty_acid_r.html">Ribosome</a>
+                <a class="btn" href="./fatty_acid_s.html">Sarcoplasmic Reticulum</a>
+                <a class="btn" href="./fatty_acid_m.html">Mitochondria</a>
+                <a class="btn" href="./fatty_acid_p.html">Peroxisome</a>
+                <a class="btn" href="./fatty_acid_g.html">Golgi</a>
+                <a class="btn" href="./fatty_acid_l.html">Lysosome</a>
+                <a class="btn" href="./fatty_acid_n.html">Nucleus</a>
+            </span>
+        </div>
+        <div id="3d-graph"></div>
+        <script>
+            const elem = document.getElementById('3d-graph');
+
+            const Graph = ForceGraph3D()(elem)
+                .graphData(gData)
+                .nodeVisibility(node => node.group !== "z")
+                .linkDirectionalArrowLength(link => link.arrow ? 5 : 0)
+                .linkDirectionalArrowRelPos(1)
+                .cooldownTicks(0);
+
+            //const radialForce = Graph
+                //.d3Force("radial", node => node.group === "z" ? 300 : 600)
+                
+
+            //const linkForce = Graph
+                //.d3Force("link")
+                //.id(gData.links)
+                //.links(link => link.force === true)
+                //.strength(node => node.group === "z" ? 0 : 500) 
+
+            //const collisionForce = Graph
+                //.d3Force("collision")
+                
+
+            //const chargeForce = Graph
+                //.d3Force("charge")
+                //.strength(node => node.group === "z" ? null : 1000);
+
+               
+                //.d3Force("link", 100);
+                //.linkDirectionalArrowLength("arrow" ? 5 : 0)
+                // .linkDirectionalArrowRelPos(1);
+        </script>
+
+      </body>
+</html>
