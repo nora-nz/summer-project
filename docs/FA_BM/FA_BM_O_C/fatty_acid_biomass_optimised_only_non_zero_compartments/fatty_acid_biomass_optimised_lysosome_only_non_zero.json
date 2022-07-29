@@ -1,0 +1,193 @@
+{
+    "nodes": [
+        {
+            "id": "m02040__91__l__93__",
+            "name": "H2O",
+            "group": "l",
+            "opacity": false
+        },
+        {
+            "id": "m03114__91__l__93__",
+            "name": "UMP",
+            "group": "l",
+            "opacity": false
+        },
+        {
+            "id": "m02751__91__l__93__",
+            "name": "Pi",
+            "group": "l",
+            "opacity": false
+        },
+        {
+            "id": "m03123__91__l__93__",
+            "name": "uridine",
+            "group": "l",
+            "opacity": false
+        },
+        {
+            "id": "m02751__91__c__93__",
+            "name": "Pi",
+            "group": "c",
+            "opacity": false
+        },
+        {
+            "id": "m03114__91__c__93__",
+            "name": "UMP",
+            "group": "c",
+            "opacity": false
+        },
+        {
+            "id": "m03123__91__c__93__",
+            "name": "uridine",
+            "group": "c",
+            "opacity": false
+        },
+        {
+            "id": "RCR11199s",
+            "name": "RCR11199s",
+            "group": "z"
+        },
+        {
+            "id": "RCR20326s",
+            "name": "RCR20326s",
+            "group": "z"
+        },
+        {
+            "id": "RCR20777s",
+            "name": "RCR20777s",
+            "group": "z"
+        },
+        {
+            "id": "RCR20778s",
+            "name": "RCR20778s",
+            "group": "z"
+        },
+        {
+            "id": "RCR11199e",
+            "name": "RCR11199e",
+            "group": "z"
+        },
+        {
+            "id": "RCR20326e",
+            "name": "RCR20326e",
+            "group": "z"
+        },
+        {
+            "id": "RCR20777e",
+            "name": "RCR20777e",
+            "group": "z"
+        },
+        {
+            "id": "RCR20778e",
+            "name": "RCR20778e",
+            "group": "z"
+        }
+    ],
+    "links": [
+        {
+            "source": "RCR11199s",
+            "target": "m02040__91__l__93__",
+            "particle": true,
+            "flux": 1.3997691894473974e-12,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR11199e",
+            "target": "RCR11199s",
+            "particle": true,
+            "flux": 1.3997691894473974e-12,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR11199s",
+            "target": "m03114__91__l__93__",
+            "particle": true,
+            "flux": 1.3997691894473974e-12,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR11199e",
+            "target": "RCR11199s",
+            "particle": true,
+            "flux": 1.3997691894473974e-12,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "m02751__91__l__93__",
+            "target": "RCR11199e",
+            "particle": true,
+            "flux": 1.3997691894473974e-12,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "m03123__91__l__93__",
+            "target": "RCR11199e",
+            "particle": true,
+            "flux": 1.3997691894473974e-12,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20326s",
+            "target": "m02751__91__l__93__",
+            "particle": true,
+            "flux": 1.3997691894473974e-12,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20326e",
+            "target": "RCR20326s",
+            "particle": true,
+            "flux": 1.3997691894473974e-12,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "m02751__91__c__93__",
+            "target": "RCR20326e",
+            "particle": true,
+            "flux": 1.3997691894473974e-12,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20777s",
+            "target": "m03114__91__c__93__",
+            "particle": true,
+            "flux": 1.3997691894473974e-12,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20777e",
+            "target": "RCR20777s",
+            "particle": true,
+            "flux": 1.3997691894473974e-12,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "m03114__91__l__93__",
+            "target": "RCR20777e",
+            "particle": true,
+            "flux": 1.3997691894473974e-12,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "m03123__91__c__93__",
+            "target": "RCR20778s",
+            "particle": true,
+            "flux": 1.3997691894473974e-12,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20778s",
+            "target": "RCR20778e",
+            "particle": true,
+            "flux": 1.3997691894473974e-12,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20778e",
+            "target": "m03123__91__l__93__",
+            "particle": true,
+            "flux": 1.3997691894473974e-12,
+            "colour": "rgba(213, 232, 231, 1)"
+        }
+    ]
+}

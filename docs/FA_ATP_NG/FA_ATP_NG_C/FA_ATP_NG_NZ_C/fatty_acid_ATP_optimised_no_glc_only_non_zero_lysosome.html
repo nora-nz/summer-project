@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style> body { margin: 0; } </style>
+      
+        <script src="https://unpkg.com/3d-force-graph"></script>
+        <script src="https://unpkg.com/d3-force-cluster-3d"></script>
+        <script src="https://unpkg.com/d3-force-3d"></script>
+        <script src="https://unpkg.com/three"></script>
+        <script src="https://unpkg.com/three-spritetext"></script>
+        <script src="fatty_acid_ATP_optimised_no_glc_only_non_zero_lysosome.js" defer></script>
+        <script src="../../../logic.js" defer></script>
+        <link rel="stylesheet" href="../../../styles.css">
+      </head>
+    <body>
+        <div class="title-wrapper">
+            <span class="title">
+                Fatty acid metabolism: Lysosome: ATP optimised, no glucose, only non-zero flux reactions showing
+            </span>
+        </div>
+        <div class="loading-message">
+            <p>Loading...</p>
+        </div>
+        <div class="button">
+            <span class="btn-wrapper">
+                <a class="btn" href="../../fatty_acid_ATP_optimised_no_glc.html">All Compartments</a>
+                <a class="btn" href="../fatty_acid_ATP_optimised_no_glc_cytoplasm.html">Cytoplasm</a>
+                <a class="btn" href="../fatty_acid_ATP_optimised_no_glc_golgi.html">Golgi</a>
+                <a class="btn" href="../fatty_acid_ATP_optimised_no_glc_lysosome.html">Lysosome</a>
+                <a class="btn" href="../fatty_acid_ATP_optimised_no_glc_mitochondria.html">Mitochondria</a>
+                <a class="btn" href="../fatty_acid_ATP_optimised_no_glc_nucleus.html">Nucleus</a>
+                <a class="btn" href="../fatty_acid_ATP_optimised_no_glc_peroxisome.html">Peroxisome</a>
+                <a class="btn" href="../fatty_acid_ATP_optimised_no_glc_ribosome.html">Ribosome</a>
+                <a class="btn" href="../fatty_acid_ATP_optimised_no_glc_sarcoplasmic_reticulum.html">Sarcoplasmic Reticulum</a>
+            </span>
+        </div>
+        <div class="legend">
+            <span>
+                <center><u>Legend:</u></center><br>
+                🔴&emsp;<u>red:</u> cytoplasm<br>
+                🦩 &emsp; <u>pink:</u> Golgi<br>
+                🟠&emsp;<u>orange:</u> lysosome<br>
+                🟡&emsp;<u>yellow:</u> mitochondria<br>
+                🟢&emsp;<u>green:</u> nucleus<br>
+                🌊&emsp;<u>teal:</u> peroxisome<br>
+                🔵&emsp;<u>blue:</u> ribosome<br>
+                🟣&emsp;<u>purple:</u> sarcoplasmic reticulum<br>
+                <br>
+                <center>━━━━━━━━━━━━━</center><br>
+                Greener lines = higher flux
+            </span>
+        </div>
+        <div class="btn-group">
+            <a href="../../../fatty_acid_biomass/fatty_acid_biomass_optimised_compartments/fatty_acid_biomass_optimised_lysosome.html"><button>Optimise for biomass</button></a>
+            <a href="../../fatty_acid_ATP/fatty_acid_ATP_optimised_compartments/fatty_acid_ATP_optimised_lysosome.html"><button>Allow glucose</button></a>
+            <a href="../fatty_acid_ATP_optimised_no_glc_lysosome.html"><button>Highlight non-zero flux reactions</button></a>
+        </div>
+        <div id="3d-graph"></div>
+
+    </body>
+</html>

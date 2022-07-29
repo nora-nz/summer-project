@@ -2,74 +2,7 @@
 <html>
     <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            body, html {
-                height: 100%;
-                margin: 0;
-                font: 400 15px/1.8 "Lato", sans-serif;
-                color: #777;
-            }
-
-            .bgimg-1, .bgimg-2, .bgimg-3 {
-            position: relative;
-            opacity: 1;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-
-            }
-            .bgimg-1 {
-                background-image: url("https://github.com/nora-nz/summer-project/blob/master/docs/3dforcegraphimage.JPG?raw=true");
-                height: 100%;
-            }
-
-            .caption {
-                position: absolute;
-                left: 0;
-                top: 50%;
-                width: 100%;
-                text-align: center;
-                color: #000;
-                
-            }
-
-            .caption span.border {
-                background-color: #111;
-                color: #fff;
-                padding: 18px;
-                font-size: 25px;
-                letter-spacing: 5px;
-                opacity: 0.8;
-                border-radius: 5px;
-            }
-
-            h3 {
-                letter-spacing: 2.5px;
-                text-transform: uppercase;
-                font: 20px "Lato", sans-serif;
-                color: #111;
-            }
-            .btn {
-                border: none;
-                background-color: #111;
-                padding: 14px 28px;
-                font-size: 16px;
-                cursor: pointer;
-                display: inline-block;
-                opacity: 0.8;
-                position: center;
-                text-align: center;
-                margin-top: 1rem;
-                border-radius: 5px;
-                text-decoration: none;
-            }
-
-                /* On mouse-over */
-            .btn:hover {background: rgb(89,203,232);}
-
-            .btn {color: #fff;}
-
-        </style>
+    <link rel="stylesheet" href="../styles.css">
     </head>
     <body>
     <div class="bgimg-1">
@@ -77,8 +10,34 @@
             <span class="border">iCardio 3D Force Graph</span>
             <div class="button">
                 <span>
-                    <a class="btn" href="./opaque_stuff_c.html">Fatty acid sarcoplasmic reticulum opaque links</a>
-                    <a class="btn" href="./removed_stuff.html">Fatty acid metabolism removed links</a>
+                    <div class="dropdown">
+                        <button class="dropbtn" href="#">Whole-cell metabolism</button>
+                        <div class="dropdown-content">
+                            <a href="#">All Compartments (slow)</a>
+                            <a href="#">Cytoplasm (slow)</a>
+                            <a href="#">Golgi</a>
+                            <a href="#">Lysosome</a>
+                            <a href="#">Mitochondria</a>
+                            <a href="#">Nucleus</a>
+                            <a href="#">Peroxisome</a>
+                            <a href="#">Ribosome</a>
+                            <a href="#">Sarcoplasmic Reticulum</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="fatty_acid_biomass/fatty_acid_biomass.html"><button class="dropbtn">Fatty acid metabolism</button></a>
+                        <div class="dropdown-content">
+                            <a href="fatty_acid_biomass/fatty_acid_biomass.html">All Compartments (slow)</a>
+                            <a href="fatty_acid_biomass/fatty_acid_biomass_compartments/fatty_acid_biomass_cytoplasm.html">Cytoplasm (slow)</a>
+                            <a href="fatty_acid_biomass/fatty_acid_biomass_compartments/fatty_acid_biomass_golgi.html">Golgi</a>
+                            <a href="fatty_acid_biomass/fatty_acid_biomass_compartments/fatty_acid_biomass_lysosome.html">Lysosome</a>
+                            <a href="fatty_acid_biomass/fatty_acid_biomass_compartments/fatty_acid_biomass_mitochondria.html">Mitochondria</a>
+                            <a href="fatty_acid_biomass/fatty_acid_biomass_compartments/fatty_acid_biomass_nucleus.html">Nucleus</a>
+                            <a href="fatty_acid_biomass/fatty_acid_biomass_compartments/fatty_acid_biomass_peroxisome.html">Peroxisome</a>
+                            <a href="fatty_acid_biomass/fatty_acid_biomass_compartments/fatty_acid_biomass_ribosome.html">Ribosome</a>
+                            <a href="fatty_acid_biomass/fatty_acid_biomass_compartments/fatty_acid_biomass_sarcoplasmic_reticulum.html">Sarcoplasmic Reticulum</a>
+                        </div>
+                    </div>
                 </span>
             </div>
         </div>

@@ -1,0 +1,479 @@
+const gData = {
+    "nodes": [
+        {
+            "id": "m02039__91__p__93__",
+            "name": "H+",
+            "group": "p",
+            "opacity": false
+        },
+        {
+            "id": "m02553__91__p__93__",
+            "name": "NADH",
+            "group": "p",
+            "opacity": false
+        },
+        {
+            "id": "m02819__91__p__93__",
+            "name": "pyruvate",
+            "group": "p",
+            "opacity": false
+        },
+        {
+            "id": "m02403__91__p__93__",
+            "name": "L-lactate",
+            "group": "p",
+            "opacity": false
+        },
+        {
+            "id": "m02552__91__p__93__",
+            "name": "NAD+",
+            "group": "p",
+            "opacity": false
+        },
+        {
+            "id": "m02896__91__p__93__",
+            "name": "serine",
+            "group": "p",
+            "opacity": false
+        },
+        {
+            "id": "m01307__91__p__93__",
+            "name": "alanine",
+            "group": "p",
+            "opacity": false
+        },
+        {
+            "id": "m02154__91__p__93__",
+            "name": "hydroxypyruvate",
+            "group": "p",
+            "opacity": false
+        },
+        {
+            "id": "m02552__91__c__93__",
+            "name": "NAD+",
+            "group": "c",
+            "opacity": false
+        },
+        {
+            "id": "m02553__91__c__93__",
+            "name": "NADH",
+            "group": "c",
+            "opacity": false
+        },
+        {
+            "id": "m02896__91__c__93__",
+            "name": "serine",
+            "group": "c",
+            "opacity": false
+        },
+        {
+            "id": "m02039__91__c__93__",
+            "name": "H+",
+            "group": "c",
+            "opacity": false
+        },
+        {
+            "id": "m02819__91__c__93__",
+            "name": "pyruvate",
+            "group": "c",
+            "opacity": false
+        },
+        {
+            "id": "m02403__91__c__93__",
+            "name": "L-lactate",
+            "group": "c",
+            "opacity": false
+        },
+        {
+            "id": "m01307__91__c__93__",
+            "name": "alanine",
+            "group": "c",
+            "opacity": false
+        },
+        {
+            "id": "m02154__91__c__93__",
+            "name": "hydroxypyruvate",
+            "group": "c",
+            "opacity": false
+        },
+        {
+            "id": "RCR10083s",
+            "name": "RCR10083s",
+            "group": "z"
+        },
+        {
+            "id": "RCR11309s",
+            "name": "RCR11309s",
+            "group": "z"
+        },
+        {
+            "id": "RCR20023s",
+            "name": "RCR20023s",
+            "group": "z"
+        },
+        {
+            "id": "RCR20024s",
+            "name": "RCR20024s",
+            "group": "z"
+        },
+        {
+            "id": "RCR20032s",
+            "name": "RCR20032s",
+            "group": "z"
+        },
+        {
+            "id": "RCR20123s",
+            "name": "RCR20123s",
+            "group": "z"
+        },
+        {
+            "id": "RCR20299s",
+            "name": "RCR20299s",
+            "group": "z"
+        },
+        {
+            "id": "RCR20305s",
+            "name": "RCR20305s",
+            "group": "z"
+        },
+        {
+            "id": "RCR20706s",
+            "name": "RCR20706s",
+            "group": "z"
+        },
+        {
+            "id": "RCR10083e",
+            "name": "RCR10083e",
+            "group": "z"
+        },
+        {
+            "id": "RCR11309e",
+            "name": "RCR11309e",
+            "group": "z"
+        },
+        {
+            "id": "RCR20023e",
+            "name": "RCR20023e",
+            "group": "z"
+        },
+        {
+            "id": "RCR20024e",
+            "name": "RCR20024e",
+            "group": "z"
+        },
+        {
+            "id": "RCR20032e",
+            "name": "RCR20032e",
+            "group": "z"
+        },
+        {
+            "id": "RCR20123e",
+            "name": "RCR20123e",
+            "group": "z"
+        },
+        {
+            "id": "RCR20299e",
+            "name": "RCR20299e",
+            "group": "z"
+        },
+        {
+            "id": "RCR20305e",
+            "name": "RCR20305e",
+            "group": "z"
+        },
+        {
+            "id": "RCR20706e",
+            "name": "RCR20706e",
+            "group": "z"
+        }
+    ],
+    "links": [
+        {
+            "source": "m02039__91__p__93__",
+            "target": "RCR10083s",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR10083s",
+            "target": "RCR10083e",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "m02553__91__p__93__",
+            "target": "RCR10083s",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR10083s",
+            "target": "RCR10083e",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "m02819__91__p__93__",
+            "target": "RCR10083s",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR10083s",
+            "target": "RCR10083e",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR10083e",
+            "target": "m02403__91__p__93__",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR10083e",
+            "target": "m02552__91__p__93__",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "m02819__91__p__93__",
+            "target": "RCR11309s",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR11309s",
+            "target": "RCR11309e",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "m02896__91__p__93__",
+            "target": "RCR11309s",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR11309s",
+            "target": "RCR11309e",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR11309e",
+            "target": "m01307__91__p__93__",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR11309e",
+            "target": "m02154__91__p__93__",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "m02552__91__p__93__",
+            "target": "RCR20023s",
+            "particle": true,
+            "flux": 95.89688624268467,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20023s",
+            "target": "RCR20023e",
+            "particle": true,
+            "flux": 95.89688624268467,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20023e",
+            "target": "m02552__91__c__93__",
+            "particle": true,
+            "flux": 95.89688624268467,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "m02553__91__c__93__",
+            "target": "RCR20024s",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20024s",
+            "target": "RCR20024e",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20024e",
+            "target": "m02553__91__p__93__",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "m02896__91__c__93__",
+            "target": "RCR20032s",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20032s",
+            "target": "RCR20032e",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20032e",
+            "target": "m02896__91__p__93__",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "m02039__91__c__93__",
+            "target": "RCR20123s",
+            "particle": true,
+            "flux": 191.79377248536957,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20123s",
+            "target": "RCR20123e",
+            "particle": true,
+            "flux": 191.79377248536957,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "m02819__91__c__93__",
+            "target": "RCR20123s",
+            "particle": true,
+            "flux": 191.79377248536957,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20123s",
+            "target": "RCR20123e",
+            "particle": true,
+            "flux": 191.79377248536957,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20123e",
+            "target": "m02039__91__p__93__",
+            "particle": true,
+            "flux": 191.79377248536957,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20123e",
+            "target": "m02819__91__p__93__",
+            "particle": true,
+            "flux": 191.79377248536957,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20299s",
+            "target": "m02039__91__c__93__",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20299e",
+            "target": "RCR20299s",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20299s",
+            "target": "m02403__91__c__93__",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20299e",
+            "target": "RCR20299s",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "m02039__91__p__93__",
+            "target": "RCR20299e",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "m02403__91__p__93__",
+            "target": "RCR20299e",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20305s",
+            "target": "m01307__91__c__93__",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20305e",
+            "target": "RCR20305s",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "m01307__91__p__93__",
+            "target": "RCR20305e",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20706s",
+            "target": "m02154__91__c__93__",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "RCR20706e",
+            "target": "RCR20706s",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        },
+        {
+            "source": "m02154__91__p__93__",
+            "target": "RCR20706e",
+            "particle": true,
+            "flux": 95.89688624268479,
+            "colour": "rgba(213, 232, 231, 1)"
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+const gData = {
+    "nodes": [],
+    "links": []
+}
