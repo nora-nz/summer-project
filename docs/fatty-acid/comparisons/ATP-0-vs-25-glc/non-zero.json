@@ -1,0 +1,698 @@
+{
+    "nodes": [
+        {
+            "id": "m01596__91__c__93__",
+            "name": "CO2",
+            "group": "c",
+            "opacity": false
+        },
+        {
+            "id": "m02040__91__c__93__",
+            "name": "H2O",
+            "group": "c",
+            "opacity": false
+        },
+        {
+            "id": "m02039__91__c__93__",
+            "name": "H+",
+            "group": "c",
+            "opacity": false
+        },
+        {
+            "id": "m02046__91__c__93__",
+            "name": "HCO3-",
+            "group": "c",
+            "opacity": false
+        },
+        {
+            "id": "m02630__91__c__93__",
+            "name": "O2",
+            "group": "c",
+            "opacity": false
+        },
+        {
+            "id": "m03101__91__c__93__",
+            "name": "tyrosine",
+            "group": "c",
+            "opacity": false
+        },
+        {
+            "id": "m02354__91__c__93__",
+            "name": "L-dopa",
+            "group": "c",
+            "opacity": false
+        },
+        {
+            "id": "m02040__91__s__93__",
+            "name": "H2O",
+            "group": "s",
+            "opacity": false
+        },
+        {
+            "id": "m02630__91__s__93__",
+            "name": "O2",
+            "group": "s",
+            "opacity": false
+        },
+        {
+            "id": "m03101__91__s__93__",
+            "name": "tyrosine",
+            "group": "s",
+            "opacity": false
+        },
+        {
+            "id": "m02354__91__s__93__",
+            "name": "L-dopa",
+            "group": "s",
+            "opacity": false
+        },
+        {
+            "id": "m01596__91__s__93__",
+            "name": "CO2",
+            "group": "s",
+            "opacity": false
+        },
+        {
+            "id": "m01421__91__s__93__",
+            "name": "carbonate",
+            "group": "s",
+            "opacity": false
+        },
+        {
+            "id": "m02039__91__s__93__",
+            "name": "H+",
+            "group": "s",
+            "opacity": false
+        },
+        {
+            "id": "m02046__91__s__93__",
+            "name": "HCO3-",
+            "group": "s",
+            "opacity": false
+        },
+        {
+            "id": "m02770__91__c__93__",
+            "name": "proline",
+            "group": "c",
+            "opacity": false
+        },
+        {
+            "id": "m02770__91__s__93__",
+            "name": "proline",
+            "group": "s",
+            "opacity": false
+        },
+        {
+            "id": "m02998__91__c__93__",
+            "name": "thyroxine",
+            "group": "c",
+            "opacity": false
+        },
+        {
+            "id": "m02998__91__s__93__",
+            "name": "thyroxine",
+            "group": "s",
+            "opacity": false
+        },
+        {
+            "id": "RCR10229s",
+            "name": "RCR10229s",
+            "group": "z"
+        },
+        {
+            "id": "RCR11415s",
+            "name": "RCR11415s",
+            "group": "z"
+        },
+        {
+            "id": "RCR30268s",
+            "name": "RCR30268s",
+            "group": "z"
+        },
+        {
+            "id": "RCR30285s",
+            "name": "RCR30285s",
+            "group": "z"
+        },
+        {
+            "id": "RCR40013s",
+            "name": "RCR40013s",
+            "group": "z"
+        },
+        {
+            "id": "RCR40014s",
+            "name": "RCR40014s",
+            "group": "z"
+        },
+        {
+            "id": "RCR40015s",
+            "name": "RCR40015s",
+            "group": "z"
+        },
+        {
+            "id": "RCR40107s",
+            "name": "RCR40107s",
+            "group": "z"
+        },
+        {
+            "id": "RCR40112s",
+            "name": "RCR40112s",
+            "group": "z"
+        },
+        {
+            "id": "RCR40140s",
+            "name": "RCR40140s",
+            "group": "z"
+        },
+        {
+            "id": "RCR40536s",
+            "name": "RCR40536s",
+            "group": "z"
+        },
+        {
+            "id": "RCR40558s",
+            "name": "RCR40558s",
+            "group": "z"
+        },
+        {
+            "id": "RCR40793s",
+            "name": "RCR40793s",
+            "group": "z"
+        },
+        {
+            "id": "RCR10229e",
+            "name": "RCR10229e",
+            "group": "z"
+        },
+        {
+            "id": "RCR11415e",
+            "name": "RCR11415e",
+            "group": "z"
+        },
+        {
+            "id": "RCR30268e",
+            "name": "RCR30268e",
+            "group": "z"
+        },
+        {
+            "id": "RCR30285e",
+            "name": "RCR30285e",
+            "group": "z"
+        },
+        {
+            "id": "RCR40013e",
+            "name": "RCR40013e",
+            "group": "z"
+        },
+        {
+            "id": "RCR40014e",
+            "name": "RCR40014e",
+            "group": "z"
+        },
+        {
+            "id": "RCR40015e",
+            "name": "RCR40015e",
+            "group": "z"
+        },
+        {
+            "id": "RCR40107e",
+            "name": "RCR40107e",
+            "group": "z"
+        },
+        {
+            "id": "RCR40112e",
+            "name": "RCR40112e",
+            "group": "z"
+        },
+        {
+            "id": "RCR40140e",
+            "name": "RCR40140e",
+            "group": "z"
+        },
+        {
+            "id": "RCR40536e",
+            "name": "RCR40536e",
+            "group": "z"
+        },
+        {
+            "id": "RCR40558e",
+            "name": "RCR40558e",
+            "group": "z"
+        },
+        {
+            "id": "RCR40793e",
+            "name": "RCR40793e",
+            "group": "z"
+        }
+    ],
+    "links": [
+        {
+            "source": "m01596__91__c__93__",
+            "target": "RCR10229s",
+            "name": "RCR10229",
+            "particle": true,
+            "flux": 108.035,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR10229s",
+            "target": "RCR10229e",
+            "name": "RCR10229",
+            "particle": true,
+            "flux": 108.035,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "m02040__91__c__93__",
+            "target": "RCR10229s",
+            "name": "RCR10229",
+            "particle": true,
+            "flux": 108.035,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR10229s",
+            "target": "RCR10229e",
+            "name": "RCR10229",
+            "particle": true,
+            "flux": 108.035,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR10229e",
+            "target": "m02039__91__c__93__",
+            "name": "RCR10229",
+            "particle": true,
+            "flux": 108.035,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR10229e",
+            "target": "m02046__91__c__93__",
+            "name": "RCR10229",
+            "particle": true,
+            "flux": 108.035,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "m02039__91__c__93__",
+            "target": "RCR11415s",
+            "name": "RCR11415",
+            "particle": true,
+            "flux": 53.909,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR11415s",
+            "target": "RCR11415e",
+            "name": "RCR11415",
+            "particle": true,
+            "flux": 53.909,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "m02630__91__c__93__",
+            "target": "RCR11415s",
+            "name": "RCR11415",
+            "particle": true,
+            "flux": 53.909,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR11415s",
+            "target": "RCR11415e",
+            "name": "RCR11415",
+            "particle": true,
+            "flux": 53.909,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "m03101__91__c__93__",
+            "target": "RCR11415s",
+            "name": "RCR11415",
+            "particle": true,
+            "flux": 53.909,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR11415s",
+            "target": "RCR11415e",
+            "name": "RCR11415",
+            "particle": true,
+            "flux": 53.909,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR11415e",
+            "target": "m02040__91__c__93__",
+            "name": "RCR11415",
+            "particle": true,
+            "flux": 53.909,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR11415e",
+            "target": "m02354__91__c__93__",
+            "name": "RCR11415",
+            "particle": true,
+            "flux": 53.909,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR30268s",
+            "target": "m01596__91__s__93__",
+            "name": "RCR30268",
+            "particle": true,
+            "flux": 0.216,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR30268e",
+            "target": "RCR30268s",
+            "name": "RCR30268",
+            "particle": true,
+            "flux": 0.216,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR30268s",
+            "target": "m02040__91__s__93__",
+            "name": "RCR30268",
+            "particle": true,
+            "flux": 0.216,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR30268e",
+            "target": "RCR30268s",
+            "name": "RCR30268",
+            "particle": true,
+            "flux": 0.216,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "m01421__91__s__93__",
+            "target": "RCR30268e",
+            "name": "RCR30268",
+            "particle": true,
+            "flux": 0.216,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR30285s",
+            "target": "m01421__91__s__93__",
+            "name": "RCR30285",
+            "particle": true,
+            "flux": 0.216,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR30285e",
+            "target": "RCR30285s",
+            "name": "RCR30285",
+            "particle": true,
+            "flux": 0.216,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "m02039__91__s__93__",
+            "target": "RCR30285e",
+            "name": "RCR30285",
+            "particle": true,
+            "flux": 0.216,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "m02046__91__s__93__",
+            "target": "RCR30285e",
+            "name": "RCR30285",
+            "particle": true,
+            "flux": 0.216,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40013s",
+            "target": "m02040__91__c__93__",
+            "name": "RCR40013",
+            "particle": true,
+            "flux": 54.126,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40013e",
+            "target": "RCR40013s",
+            "name": "RCR40013",
+            "particle": true,
+            "flux": 54.126,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "m02040__91__s__93__",
+            "target": "RCR40013e",
+            "name": "RCR40013",
+            "particle": true,
+            "flux": 54.126,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40014s",
+            "target": "m02630__91__c__93__",
+            "name": "RCR40014",
+            "particle": true,
+            "flux": 53.909,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40014e",
+            "target": "RCR40014s",
+            "name": "RCR40014",
+            "particle": true,
+            "flux": 53.909,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "m02630__91__s__93__",
+            "target": "RCR40014e",
+            "name": "RCR40014",
+            "particle": true,
+            "flux": 53.909,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40015s",
+            "target": "m03101__91__c__93__",
+            "name": "RCR40015",
+            "particle": true,
+            "flux": 53.909,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40015e",
+            "target": "RCR40015s",
+            "name": "RCR40015",
+            "particle": true,
+            "flux": 53.909,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "m03101__91__s__93__",
+            "target": "RCR40015e",
+            "name": "RCR40015",
+            "particle": true,
+            "flux": 53.909,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40107s",
+            "target": "m01596__91__c__93__",
+            "name": "RCR40107",
+            "particle": true,
+            "flux": 108.035,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40107e",
+            "target": "RCR40107s",
+            "name": "RCR40107",
+            "particle": true,
+            "flux": 108.035,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "m01596__91__s__93__",
+            "target": "RCR40107e",
+            "name": "RCR40107",
+            "particle": true,
+            "flux": 108.035,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40112s",
+            "target": "m02770__91__c__93__",
+            "name": "RCR40112",
+            "particle": true,
+            "flux": 0.216,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40112e",
+            "target": "RCR40112s",
+            "name": "RCR40112",
+            "particle": true,
+            "flux": 0.216,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "m02770__91__s__93__",
+            "target": "RCR40112e",
+            "name": "RCR40112",
+            "particle": true,
+            "flux": 0.216,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40140s",
+            "target": "m02039__91__s__93__",
+            "name": "RCR40140",
+            "particle": true,
+            "flux": 0.216,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40140e",
+            "target": "RCR40140s",
+            "name": "RCR40140",
+            "particle": true,
+            "flux": 0.216,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40140s",
+            "target": "m02770__91__s__93__",
+            "name": "RCR40140",
+            "particle": true,
+            "flux": 0.216,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40140e",
+            "target": "RCR40140s",
+            "name": "RCR40140",
+            "particle": true,
+            "flux": 0.216,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "m02039__91__c__93__",
+            "target": "RCR40140e",
+            "name": "RCR40140",
+            "particle": true,
+            "flux": 0.216,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "m02770__91__c__93__",
+            "target": "RCR40140e",
+            "name": "RCR40140",
+            "particle": true,
+            "flux": 0.216,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "m02998__91__c__93__",
+            "target": "RCR40536s",
+            "name": "RCR40536",
+            "particle": true,
+            "flux": 108.035,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40536s",
+            "target": "RCR40536e",
+            "name": "RCR40536",
+            "particle": true,
+            "flux": 108.035,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40536e",
+            "target": "m02998__91__s__93__",
+            "name": "RCR40536",
+            "particle": true,
+            "flux": 108.035,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "m02046__91__c__93__",
+            "target": "RCR40558s",
+            "name": "RCR40558",
+            "particle": true,
+            "flux": 108.035,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40558s",
+            "target": "RCR40558e",
+            "name": "RCR40558",
+            "particle": true,
+            "flux": 108.035,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "m02998__91__s__93__",
+            "target": "RCR40558s",
+            "name": "RCR40558",
+            "particle": true,
+            "flux": 108.035,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40558s",
+            "target": "RCR40558e",
+            "name": "RCR40558",
+            "particle": true,
+            "flux": 108.035,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40558e",
+            "target": "m02046__91__s__93__",
+            "name": "RCR40558",
+            "particle": true,
+            "flux": 108.035,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40558e",
+            "target": "m02998__91__c__93__",
+            "name": "RCR40558",
+            "particle": true,
+            "flux": 108.035,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "m02354__91__c__93__",
+            "target": "RCR40793s",
+            "name": "RCR40793",
+            "particle": true,
+            "flux": 53.909,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40793s",
+            "target": "RCR40793e",
+            "name": "RCR40793",
+            "particle": true,
+            "flux": 53.909,
+            "colour": "rgba(232, 242, 241, 1)"
+        },
+        {
+            "source": "RCR40793e",
+            "target": "m02354__91__s__93__",
+            "name": "RCR40793",
+            "particle": true,
+            "flux": 53.909,
+            "colour": "rgba(232, 242, 241, 1)"
+        }
+    ]
+}

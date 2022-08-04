@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fatty acid metabolism optimised for ATP</title>
+        <script src="https://unpkg.com/3d-force-graph"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <script src="https://unpkg.com/d3-force-3d"></script>
+        <script src="https://unpkg.com/three"></script>
+        <script src="//unpkg.com/three-spritetext"></script>
+        <script src="../../../../logic.js" defer></script>
+        <link rel="stylesheet" href="../../../../styles.css">
+    </head>
+    <body><div x-data="{ open: false }">
+        <button @click="open = !open" class="info-button">
+            <img x-show="open" src="../../../../info-logo.svg" alt="">
+            <img x-show="!open" src="../../../../info-logo.svg" alt="">
+        </button>
+        <div class="sidepanel sidepanel--right" :class="open ? 'sidepanel--open' : ''">        
+            <h3>iCardio 3D force directed graph metabolic modeller</h3>
+            <h5>About the project</h5>
+            <p>This visualisation tool was created to better understand metabolic flux changes in heart muscle cells as part of a summer internship at the University of Strathclyde, Glasgow. </p>
+            <p>In-silico modelling of metabolic flux could help identify potential targets for research. Using the metabolic reactions of cardiomyocytes and changing the underlying conditions, such as a lack of glucose, models how a diabetic cell could be function when affected by diabetic cardiomyopathy. This disease is characterised by an abnormal myocardial structure and performance, and may be why diabetic people are more likely to die of heart failure than non-diabetic people. Visualising thousands of reactions in three dimensions can help grasp the complexity of cellular metabolism.</p>
+            <p>The dataset used is the iCardio model <a href="https://pubmed.ncbi.nlm.nih.gov/33691118/">(Dougherty et al., 2021)</a> which contains 4200 reactions of 2890 compounds. The reactions in some graphs have been filtered to show only those which take part in fatty acid metabolism because heart muscle cells can utilise fatty acids as an alternative energy source when ATP is scarce. </p>
+            <h5>About the graph</h5>
+            <p>Spheres represent the different compounds taking part in the reactions, they are colour-coded to show which compartment in the cell they are located. The lines are individual reactions and the particles travelling down them show the direction of the reaction. Progressively greener lines show higher flux in these reactions. Hovering over any spheres or lines show the appropriate compound/reaction names. Additionally, zooming in on the reaction lines also shows the reaction name and flux value.</p>
+            <p>The side panel contains a legend, home button, and the options appropriate for each graph.</p>
+            <p>Controls: left-click/drag to rotate, mouse-wheel/middle-click/pinch-pull to zoom, right-click/two-finger drag to pan.</p>
+            <h5>Acknowledgements</h5>
+            <ul>
+                <li>Supervisors: Dr Leighton Pritchard & Dr Gwyn Gould</li>
+                <li>Funding: Carnegie Trust for the Universities of Scotland</li>
+                <li>Graphing library: https://github.com/vasturiano/3d-force-graph</li>
+                <li>Lots of help: Andy Webster</li>
+            </ul>
+        </div>
+    </div>
+    <div x-data="{ open: false }" class="sidepanel sidepanel--left" :class="open ? 'sidepanel--open' : ''">        
+        <button @click="open = !open" class="button button--arrow">
+            <img x-show="open" src="/left-arrow.svg" alt="">
+            <img x-show="!open" src="/right-arrow.svg" alt="">
+        </button>
+        <div class="sidepanel__scrollbox">
+            <h2>Options</h2>
+            <div class="options-wrapper">
+                <a href="../base/"><button class="options">
+                    Highlight non-zero flux reactions (slow)
+                </button></a>
+                <a href="../../../biomass/mitochondria/non-zero/"><button class="options">
+                    Optimise for biomass
+                </button></a>
+                <div class="dropdown">
+                    <button class="dropbtn">Show compartments</button>
+                    <div class="dropdown-content">
+                        <a href="../../all-compartments/non-zero/">All Compartments</a>
+                        <a href="../../cytoplasm/non-zero/">Cytoplasm</a>
+                        <a href="../../sarcoplasmic-reticulum/non-zero/">Sarcoplasmic Reticulum</a>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <span class="legend">
+                <h2>Legend</h2>
+                <ul style="list-style-type:none;">
+                    <li>🔴 <u>red:</u> cytoplasm</li>
+                    <li><span class="circle"></span> <u>pink:</u> Golgi</li>
+                    <li>🟠 <u>orange:</u> lysosome</li>
+                    <li>🟡 <u>yellow:</u> mitochondria</li>
+                    <li>🟢 <u>green:</u> nucleus</li>
+                    <li><span class="circle circle--teal"></span> <u>teal:</u> peroxisome</li>
+                    <li>🔵 <u>blue:</u> ribosome</li>
+                    <li>🟣 <u>purple:</u> sarcoplasmic reticulum</li>
+                    <li>The lines get progressively greener with higher flux</li>
+                </ul>
+            </span>
+            <div class="home-button">
+                <a class="home" href="../../../../index.html">Home</a>
+            </div>   
+        </div>
+    </div>
+        <div id="3d-graph"></div>
+    </body>
+</html>
