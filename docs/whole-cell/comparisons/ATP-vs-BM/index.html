@@ -10,13 +10,13 @@
         <script src="https://unpkg.com/d3-force-3d"></script>
         <script src="https://unpkg.com/three"></script>
         <script src="https://unpkg.com/three-spritetext"></script>
-        <script src="../../../../logic.js" defer></script>
-        <link rel="stylesheet" href="../../../../styles.css">
+        <script src="../../../logic.js" defer></script>
+        <link rel="stylesheet" href="../../../styles.css">
     </head>
     <body><div x-data="{ open: false }">
         <button @click="open = !open" class="info-button">
-            <img x-show="open" src="../../../../info-logo.svg" alt="">
-            <img x-show="!open" src="../../../../info-logo.svg" alt="">
+            <img x-show="open" src="../../../info-logo.svg" alt="">
+            <img x-show="!open" src="../../../info-logo.svg" alt="">
         </button>
         <div class="sidepanel sidepanel--right" :class="open ? 'sidepanel--open' : ''">        
             <h3>iCardio 3D force directed graph metabolic modeller</h3>
@@ -39,8 +39,8 @@
     </div>
     <div x-data="{ open: false }" class="sidepanel sidepanel--left" :class="open ? 'sidepanel--open' : ''">        
         <button @click="open = !open" class="button button--arrow">
-            <img x-show="open" src="/left-arrow.svg" alt="">
-            <img x-show="!open" src="/right-arrow.svg" alt="">
+            <img x-show="open" src="../../../left-arrow.svg" alt="">
+            <img x-show="!open" src="../../../right-arrow.svg" alt="">
         </button>
         <div class="sidepanel__scrollbox">
             <h2>Options</h2>
@@ -68,7 +68,7 @@
                 </ul>
             </span>
             <div class="home-button">
-                <a class="home" href="../../../../index.html">Home</a>
+                <a class="home" href="../../../index.html">Home</a>
             </div>   
         </div>
     </div>
